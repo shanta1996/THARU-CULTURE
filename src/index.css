@@ -1,1 +1,4 @@
 @import "tailwindcss";
+.firstPage{
+    perspective: 100px;
+}
