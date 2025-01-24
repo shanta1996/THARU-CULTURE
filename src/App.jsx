@@ -6,8 +6,8 @@ import ThirdPage from './pages/ThirdPage'
 const App = () => {
   return (
     <>
-      {/* <FirstPage/> */}
-      {/* <SecondPage/> */}
+      <FirstPage/>
+      <SecondPage/>
       <ThirdPage/>
     </>
   )
