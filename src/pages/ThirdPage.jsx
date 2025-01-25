@@ -17,12 +17,22 @@ const ThirdPage = () => {
             transform: 'translateY(100px)',
             // opacity:0
         })
+        gsap.to('.ornamentSlide',{
+            xPercent:-300,
+            scrollTrigger:{
+                trigger:'.thirdPage',
+                scrub:1,
+                start:'top top',
+                markers:true,
+                pin:true
+            }
+        })
     })
     return (
         <>
-            <div className='w-full'>
+            <div className='thirdPage w-full'>
                 <div className='h-[400vh] bg-green-300 relative'>
-                    <div className='ornamentDiv h-[100vh] w-full overflow-hidden flex bg-red-300'>
+                    <div className='ornamentDiv sticky top-0 left-0 h-[100vh] w-full overflow-hidden flex bg-red-300'>
                         <div className='ornamentSlide h-screen w-full bg-yellow-200 flex justify-center items-center flex-shrink-0'>
                             <h2 className='text-6xl font-[Ubuntu] font-medium '>Tharu Ornaments</h2>
                         </div>
