@@ -8,28 +8,44 @@ import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
 const FirstPage = () => {
     const tiltedText = useRef(null)
+
+    var tl=gsap.timeline({
+        
+    })
   useGSAP(()=>{
-    gsap.to('.tiltText',{
-        clipPath: 'circle(15% at 50% 50%)',
+    tl.to('.tiltText',{
+        clipPath: 'circle(0% at 50% 50%)',
+        // ease:'power1.inOut',
+        ease:'power1',
         scrollTrigger:{
             trigger:'.tiltText',
-            markers:true,
             scrub:1,
-            start:'top top',
-            // end:'bottom bottom',
+            start:'top top'
+        }
+    })
+    gsap.set('.scaleText',{
+        scale:3
+    })
+    tl.to('.scaleText',{
+        scale:1,
+        scrollTrigger:{
+            trigger:'.scaleText',
+            scrub:1,
+            start:'top top'
         }
     })
   })
     return (
         <>
-            <div className='page1 w-full relative'>
-                <div className='firstPage h-screen text-9xl font-["Ubuntu"] font-bold flex items-center justify-center '>
-                    <div className='bg-red-300 scale-[1.3] '>Scroll to Explore</div>
+            <div className='page1 w-full h-[200vh] relative'>
+                <div className='sticky top-0 left-0'>
+                <div className='firstPage h-screen text-9xl font-["Ubuntu"] font-medium flex items-center justify-center overflow-hidden'>
+                    <div className='scaleText scale-[1] tracking-tighter uppercase'>Scroll to Explore</div>
                 </div>
                 <div style={{clipPath:'circle(100% at 50% 50%)'}} className='tiltText absolute h-screen w-full top-0 bg-zinc-100 flex items-center justify-center'>
                     <TiltedText tilt={tiltedText}/>
                 </div>
-
+                </div>
             </div>
 
 
