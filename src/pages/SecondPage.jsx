@@ -8,7 +8,7 @@ const SecondPage = () => {
         <>
             <div className=' flex justify-between items-start p-12 relative'>
                 <HistoryHeading/>
-                <div className='w-[60%] flex flex-col justify-center items-end'>
+                <div className='w-[50%] flex flex-col justify-center items-end'>
                     <div className='imageDiv w-full mb-[300px] overflow-hidden'>
                         <img src="https://nepalbase.org/wp-content/uploads/2015/04/Tharu-community-meeting-_history-of-Tharu-3.jpg" className='image object-cover w-full h-full duration-200 ease-linear' alt="" />
                     </div>
