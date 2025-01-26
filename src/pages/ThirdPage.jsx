@@ -32,7 +32,7 @@ const ThirdPage = () => {
         <>
             <div className='thirdPage w-full'>
                 <div className='h-[200vh] bg-green-300 relative overflow-hidden'>
-                    <div className='ornamentDiv sticky top-0 left-0 h-[100vh] w-full overflow-hidden flex bg-red-300'>
+                    <div className='ornamentDiv sticky top-0 left-0 h-[100vh] w-full overflow-hidden flex '>
                         <div className='ornamentSlide h-screen w-full bg-yellow-200 flex justify-center items-center flex-shrink-0'>
                             <h2 className='text-6xl font-[Ubuntu] font-medium '>Tharu Ornaments</h2>
                         </div>
@@ -59,7 +59,7 @@ const ThirdPage = () => {
 
                         </div>
                     </div>
-                    <div className='h-screen'>
+                    <div className='h-screen bg-green-600'>
                         <Foods/>
                     </div>
                 </div>
