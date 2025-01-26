@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
-/* secondPage */
+body{
+    color: #27272a;
+    
+}
 
 .imageDiv:hover .image{
    transform: scale(1.1);
