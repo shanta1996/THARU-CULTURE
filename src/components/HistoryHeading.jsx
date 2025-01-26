@@ -19,7 +19,7 @@ const HistoryHeading = () => {
             ease:'power2',
             scrollTrigger:{
                 trigger:'.mainDiv',
-                markers:true,
+                // markers:true,
                 start:'top 50%',
                 scrub:1
             }

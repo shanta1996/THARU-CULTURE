@@ -13,7 +13,7 @@ const TiltedText = ({tilt}) => {
   })
   return (
     <>
-        <div ref={tilt} className='rotate-x-[30deg] font-["Ubuntu"] font-bold relative'>
+        <div ref={tilt} className='rotate-x-[30deg] font-["Ubuntu"] font-medium relative'>
                         <h1 className='tilt text-9xl tracking-tight '>THARU CULTURE</h1>
                         <div className='h-[60px] w-[60px] overflow-hidden rounded-full absolute top-1/2 -translate-y-[95px] left-0 -translate-x-1/2 '>
                             <img src="/sirbindi.png" className='object-cover' alt="" />

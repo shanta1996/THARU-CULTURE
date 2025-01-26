@@ -37,12 +37,12 @@ const FirstPage = () => {
   })
     return (
         <>
-            <div className='page1 w-full h-[200vh] relative'>
+            <div className='page1 bg-[#edf6f9] w-full h-[200vh] relative'>
                 <div className='sticky top-0 left-0'>
                 <div className='firstPage h-screen text-9xl font-["Ubuntu"] font-medium flex items-center justify-center overflow-hidden'>
-                    <div className='scaleText scale-[1] tracking-tighter uppercase'>Scroll to Explore</div>
+                    <div className='scaleText scale-[1]  tracking-tighter uppercase'>Scroll to Explore</div>
                 </div>
-                <div style={{clipPath:'circle(100% at 50% 50%)'}} className='tiltText absolute h-screen w-full top-0 bg-zinc-100 flex items-center justify-center'>
+                <div style={{clipPath:'circle(100% at 50% 50%)'}} className='tiltText absolute h-screen w-full top-0 bg-[#e78d63] flex items-center justify-center'>
                     <TiltedText tilt={tiltedText}/>
                 </div>
                 </div>
