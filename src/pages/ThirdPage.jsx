@@ -5,6 +5,7 @@ import culture from '../utils/cultures.json'
 import Dhakiya from '../components/Dhakiya'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import Foods from '../components/Foods'
 
 
 const ThirdPage = () => {
@@ -30,12 +31,12 @@ const ThirdPage = () => {
     return (
         <>
             <div className='thirdPage w-full'>
-                <div className='h-[400vh] bg-green-300 relative'>
+                <div className='h-[200vh] bg-green-300 relative overflow-hidden'>
                     <div className='ornamentDiv sticky top-0 left-0 h-[100vh] w-full overflow-hidden flex bg-red-300'>
                         <div className='ornamentSlide h-screen w-full bg-yellow-200 flex justify-center items-center flex-shrink-0'>
                             <h2 className='text-6xl font-[Ubuntu] font-medium '>Tharu Ornaments</h2>
                         </div>
-                        <div className='ornamentSlide h-screen w-full bg-yellow-500 flex-shrink-0 flex items-center justify-center gap-[80px] relative'>
+                        <div className='ornamentSlide h-screen w-full bg-[#B5C18E] flex-shrink-0 flex items-center justify-center gap-[80px] relative'>
                             {ornamentData.map((getData, index) => (
                                 <div className=' roundBox' key={index}>
                                     <Ornaments getData={getData} />
@@ -46,7 +47,7 @@ const ThirdPage = () => {
                         <div className='ornamentSlide h-screen w-full bg-yellow-200 flex justify-center items-center flex-shrink-0'>
                             <h2 className='text-6xl font-[Ubuntu] font-medium '>Tharu Cultures</h2>
                         </div>
-                        <div className='ornamentSlide h-screen w-full bg-green-200 flex-shrink-0 flex items-center justify-center  gap-[50px] relative'>
+                        <div className='ornamentSlide h-screen w-full bg-[#B5C18E] flex-shrink-0 flex items-center justify-center  gap-[50px] relative'>
                             {
                                 culture.map((image, i) => (
                                     <div key={i} className=' roundBox'>
@@ -58,7 +59,11 @@ const ThirdPage = () => {
 
                         </div>
                     </div>
+                    <div className='h-screen'>
+                        <Foods/>
+                    </div>
                 </div>
+               
             </div>
         </>
     )

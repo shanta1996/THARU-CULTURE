@@ -6,7 +6,7 @@ import HistoryCard from '../components/HistoryCard'
 const SecondPage = () => {
     return (
         <>
-            <div className='bg-[#6b3b25] flex justify-between items-start p-12 relative'>
+            <div className='bg-[#B5C18E] flex justify-between items-start p-12 relative'>
                 <HistoryHeading/>
                 <div className='w-[50%] flex flex-col justify-center items-end'>
                     <div className='imageDiv w-full mb-[300px] overflow-hidden'>

@@ -42,7 +42,7 @@ const FirstPage = () => {
                 <div className='firstPage h-screen text-9xl font-["Ubuntu"] font-medium flex items-center justify-center overflow-hidden'>
                     <div className='scaleText scale-[1]  tracking-tighter uppercase'>Scroll to Explore</div>
                 </div>
-                <div style={{clipPath:'circle(100% at 50% 50%)'}} className='tiltText absolute h-screen w-full top-0 bg-[#e78d63] flex items-center justify-center'>
+                <div style={{clipPath:'circle(100% at 50% 50%)'}} className='tiltText absolute h-screen w-full top-0 bg-[#DEAC80] flex items-center justify-center'>
                     <TiltedText tilt={tiltedText}/>
                 </div>
                 </div>
