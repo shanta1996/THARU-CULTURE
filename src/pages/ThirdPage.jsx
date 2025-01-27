@@ -32,7 +32,7 @@ const ThirdPage = () => {
     return (
         <>
             <div className='thirdPage w-full'>
-                <div className='h-[300vh] bg-green-300 relative overflow-hidden'>
+                <div className='h-[300vh] relative overflow-hidden'>
                     <div className='ornamentDiv sticky top-0 left-0 h-[100vh] w-full overflow-hidden flex '>
                         <div className='ornamentSlide h-screen w-full bg-[#DEAC80] flex justify-center items-center flex-shrink-0'>
                             <h2 className='text-5xl text-center md:text-8xl 2xl:text-9xl font-[Ubuntu] font-medium '>Tharu Ornaments</h2>

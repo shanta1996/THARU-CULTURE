@@ -16,7 +16,7 @@ const FirstPage = () => {
     tl.to('.tiltText',{
         clipPath: 'circle(0% at 50% 50%)',
         // ease:'power1.inOut',
-        ease:'power1',
+        ease:'power1.out',
         scrollTrigger:{
             trigger:'.tiltText',
             scrub:1,
@@ -28,6 +28,7 @@ const FirstPage = () => {
     })
     tl.to('.scaleText',{
         scale:1,
+        ease:'power1.out',
         scrollTrigger:{
             trigger:'.scaleText',
             scrub:1,

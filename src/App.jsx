@@ -6,9 +6,9 @@ import ThirdPage from './pages/ThirdPage'
 const App = () => {
   return (
     <>
-      <FirstPage/>
-      <SecondPage/>
-      <ThirdPage/>
+      <FirstPage />
+      <SecondPage />
+      <ThirdPage />
     </>
   )
 }

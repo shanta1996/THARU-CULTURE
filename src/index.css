@@ -1,8 +1,21 @@
 @import "tailwindcss";
 
+*::selection{
+    background-color: #27272a;
+    color: #DEAC80;
+}
 body{
-    color: #27272a;
-    
+    color: #27272a; 
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 20px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #DEAC80;
+    height: 20px;
+    border-radius: 50%;
+    border-left: 4px black solid;
 }
 
 .imageDiv:hover .image{
