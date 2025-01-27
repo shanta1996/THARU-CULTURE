@@ -9,10 +9,10 @@ gsap.registerPlugin(ScrollTrigger)
 const SecondPage = () => {
     return (
         <>
-            <div className='bg-[#B5C18E] secondPage flex justify-between items-start p-12 relative'>
+            <div className='bg-[#B5C18E] secondPage flex-none md:flex justify-between items-start p-5 md:p-12 relative'>
                 <HistoryHeading />
-                <div className='w-[50%] flex flex-col justify-center items-end'>
-                    <div className='imageDiv w-full mb-[300px] overflow-hidden'>
+                <div className='w-full md:w-[50%] flex flex-col justify-center items-end md:mt-0 mt-10'>
+                    <div className='imageDiv md:h-auto h-[300px] w-full mb-3 md:mb-[300px] overflow-hidden'>
                         <img src="https://nepalbase.org/wp-content/uploads/2015/04/Tharu-community-meeting-_history-of-Tharu-3.jpg" className='image object-cover w-full h-full duration-200 ease-linear' alt="" />
                     </div>
                     {historyData.map((getData, index) => (

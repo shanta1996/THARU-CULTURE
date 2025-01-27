@@ -28,7 +28,7 @@ const HistoryHeading = () => {
     
     return (
         <>
-            <div className='sticky mainDiv  top-0 left-0 w-[45%] p-5'>
+            <div className='static md:sticky  mainDiv  top-0 left-0 md:w-[45%] w-full p-0 md:p-5'>
                 <h1 className='capitalize text-2xl md:text-4xl 2xl:text-5xl'>history of tharu in nepal</h1>
                 <p className='para text-md md:text-lg 2xl:text-xl mt-5'>{letters.map((text,i)=>(
                     <span key={i}>{text}</span>
