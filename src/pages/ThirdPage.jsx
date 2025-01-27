@@ -34,7 +34,7 @@ const ThirdPage = () => {
             <div className='thirdPage w-full'>
                 <div className='h-[300vh] bg-green-300 relative overflow-hidden'>
                     <div className='ornamentDiv sticky top-0 left-0 h-[100vh] w-full overflow-hidden flex '>
-                        <div className='ornamentSlide h-screen w-full bg-yellow-200 flex justify-center items-center flex-shrink-0'>
+                        <div className='ornamentSlide h-screen w-full bg-[#DEAC80] flex justify-center items-center flex-shrink-0'>
                             <h2 className='text-6xl font-[Ubuntu] font-medium '>Tharu Ornaments</h2>
                         </div>
                         <div className='ornamentSlide h-screen w-full bg-[#B5C18E] flex-shrink-0 flex items-center justify-center gap-[80px] relative'>
@@ -45,7 +45,7 @@ const ThirdPage = () => {
                                 // 
                             ))}
                         </div>
-                        <div className='ornamentSlide h-screen w-full bg-yellow-200 flex justify-center items-center flex-shrink-0'>
+                        <div className='ornamentSlide h-screen w-full bg-[#DEAC80] flex justify-center items-center flex-shrink-0'>
                             <h2 className='text-6xl font-[Ubuntu] font-medium '>Tharu Cultures</h2>
                         </div>
                         <div className='ornamentSlide h-screen w-full bg-[#B5C18E] flex-shrink-0 flex items-center justify-center  gap-[50px] relative'>
@@ -60,7 +60,7 @@ const ThirdPage = () => {
 
                         </div>
                     </div>
-                    <div className='h-screen bg-green-600'>
+                    <div className='h-screen'>
                         <Foods/>
                     </div>
                     <div className='h-screen'>
