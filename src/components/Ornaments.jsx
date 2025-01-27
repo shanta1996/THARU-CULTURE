@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Ornaments = ({getData,imgRef}) => {
+const Ornaments = ({getData}) => {
     return (
         <>
-            <div ref={imgRef}>
+            <div>
                <div className='h-[150px] w-[150px] md:h-[200px] md:w-[200px] rounded-full overflow-hidden'>
                     <img src={getData.image} className='h-full w-full object-cover bg-center' alt="" />
                 </div>

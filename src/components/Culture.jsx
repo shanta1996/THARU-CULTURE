@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Dhakiya = ({image}) => {
+const Culture = ({image}) => {
     return (
         <>
             <div className='h-[150px] w-[150px] md:h-[200px] md:w-[200px] rounded-full overflow-hidden'>
@@ -10,4 +10,4 @@ const Dhakiya = ({image}) => {
     )
 }
 
-export default Dhakiya
+export default Culture

@@ -2,11 +2,12 @@ import React, { useRef } from 'react'
 import ornamentData from '../utils/Ornaments.json'
 import Ornaments from '../components/Ornaments'
 import culture from '../utils/cultures.json'
-import Dhakiya from '../components/Dhakiya'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Foods from '../components/Foods'
 import AllImage from '../components/AllImage'
+import Culture from '../components/Culture'
+
 
 
 const ThirdPage = () => {
@@ -30,7 +31,7 @@ const ThirdPage = () => {
     return (
         <>
             <div className='thirdPage w-full'>
-                <div className='h-[500vh] md:h-[300vh] bg-green-300 relative overflow-hidden'>
+                <div className='h-[300vh] bg-green-300 relative overflow-hidden'>
                     <div className='ornamentDiv sticky top-0 left-0 h-[100vh] w-full overflow-hidden flex '>
                         <div className='ornamentSlide h-screen w-full bg-[#DEAC80] flex justify-center items-center flex-shrink-0'>
                             <h2 className='text-5xl text-center md:text-6xl font-[Ubuntu] font-medium '>Tharu Ornaments</h2>
@@ -50,7 +51,7 @@ const ThirdPage = () => {
                             {
                                 culture.map((image, i) => (
                                     <div key={i} className='roundBox md:nth-[odd]:-translate-y-[100px] nth-[odd]:-translate-y-[0] md:nth-[even]:translate-y-[100px] nth-[even]:translate-y-[0]'>
-                                        <Dhakiya image={image} />
+                                        <Culture image={image} />
                                     </div>
                                 ))
                             }
