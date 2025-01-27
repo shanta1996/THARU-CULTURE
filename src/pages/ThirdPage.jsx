@@ -6,6 +6,7 @@ import Dhakiya from '../components/Dhakiya'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import Foods from '../components/Foods'
+import AllImage from '../components/AllImage'
 
 
 const ThirdPage = () => {
@@ -31,7 +32,7 @@ const ThirdPage = () => {
     return (
         <>
             <div className='thirdPage w-full'>
-                <div className='h-[200vh] bg-green-300 relative overflow-hidden'>
+                <div className='h-[300vh] bg-green-300 relative overflow-hidden'>
                     <div className='ornamentDiv sticky top-0 left-0 h-[100vh] w-full overflow-hidden flex '>
                         <div className='ornamentSlide h-screen w-full bg-yellow-200 flex justify-center items-center flex-shrink-0'>
                             <h2 className='text-6xl font-[Ubuntu] font-medium '>Tharu Ornaments</h2>
@@ -62,6 +63,10 @@ const ThirdPage = () => {
                     <div className='h-screen bg-green-600'>
                         <Foods/>
                     </div>
+                    <div className='h-screen'>
+                        <AllImage/>
+                    </div>
+                    
                 </div>
                
             </div>
