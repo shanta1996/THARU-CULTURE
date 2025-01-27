@@ -20,6 +20,7 @@ const ThirdPage = () => {
         // })
         gsap.to('.ornamentSlide',{
             xPercent:-300,
+            ease:'power1.out',
             scrollTrigger:{
                 trigger:'.thirdPage',
                 scrub:1,
@@ -34,23 +35,23 @@ const ThirdPage = () => {
                 <div className='h-[300vh] bg-green-300 relative overflow-hidden'>
                     <div className='ornamentDiv sticky top-0 left-0 h-[100vh] w-full overflow-hidden flex '>
                         <div className='ornamentSlide h-screen w-full bg-[#DEAC80] flex justify-center items-center flex-shrink-0'>
-                            <h2 className='text-5xl text-center md:text-6xl font-[Ubuntu] font-medium '>Tharu Ornaments</h2>
+                            <h2 className='text-5xl text-center md:text-8xl 2xl:text-9xl font-[Ubuntu] font-medium '>Tharu Ornaments</h2>
                         </div>
-                        <div className='ornamentSlide h-screen w-full bg-[#B5C18E] flex-shrink-0 grid grid-cols-2 md:grid-cols-6 items-center justify-items-center py-10 md:py-[150px] px-0 md:px-10 md:grid-rows-1 grid-rows-3 gap-[50px] relative'>
+                        <div className='ornamentSlide h-screen w-full bg-[#B5C18E] flex-shrink-0 grid grid-cols-2 md:grid-cols-6 items-center justify-items-center py-10 md:py-[150px] px-0 md:px-10 md:grid-rows-1 grid-rows-3 gap-[10px] md:gap-[50px] relative'>
                             {ornamentData.map((getData, index) => (
-                                <div className='roundBox md:nth-[odd]:-translate-y-[100px] nth-[odd]:-translate-y-[0] md:nth-[even]:translate-y-[100px] nth-[even]:translate-y-[0]' key={index}>
+                                <div className='roundBox md:nth-[odd]:-translate-y-[100px] nth-[odd]:-translate-y-[0] md:nth-[even]:translate-y-[100px] 2xl:nth-[odd]:-translate-y-[130px] 2xl:nth-[even]:translate-y-[130px]   nth-[even]:translate-y-[0]' key={index}>
                                     <Ornaments getData={getData} />
                                 </div>
                                 // 
                             ))}
                         </div>
                         <div className='ornamentSlide h-screen w-full bg-[#DEAC80] flex justify-center items-center flex-shrink-0'>
-                            <h2 className='text-5xl text-center md:text-6xl font-[Ubuntu] font-medium '>Tharu Cultures</h2>
+                            <h2 className='text-5xl text-center md:text-8xl 2xl:text-9xl font-[Ubuntu] font-medium '>Tharu Cultures</h2>
                         </div>
-                        <div className='ornamentSlide h-screen w-full bg-[#B5C18E] flex-shrink-0 grid grid-cols-2 md:grid-cols-6 items-center justify-items-center py-10 md:py-[150px] px-0 md:px-10 md:grid-rows-1 grid-rows-3 gap-[50px] relative'>
+                        <div className='ornamentSlide h-screen w-full bg-[#B5C18E] flex-shrink-0 grid grid-cols-2 md:grid-cols-6 items-center justify-items-center py-10 md:py-[150px] px-0 md:px-10 md:grid-rows-1 grid-rows-3 gap-0 md:gap-[50px] relative'>
                             {
                                 culture.map((image, i) => (
-                                    <div key={i} className='roundBox md:nth-[odd]:-translate-y-[100px] nth-[odd]:-translate-y-[0] md:nth-[even]:translate-y-[100px] nth-[even]:translate-y-[0]'>
+                                    <div key={i} className='roundBox md:nth-[odd]:-translate-y-[100px] nth-[odd]:-translate-y-[0] md:nth-[even]:translate-y-[100px] nth-[even]:translate-y-[0] 2xl:nth-[odd]:-translate-y-[130px] 2xl:nth-[even]:translate-y-[130px] '>
                                         <Culture image={image} />
                                     </div>
                                 ))
@@ -59,7 +60,7 @@ const ThirdPage = () => {
 
                         </div>
                     </div>
-                    <div className='h-screen'>
+                    <div className='h-screen '>
                         <Foods/>
                     </div>
                     <div className='h-screen'>

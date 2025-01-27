@@ -17,7 +17,7 @@ const AllImage = () => {
     return (
         <>
             <div className='bg-zinc-900 w-full h-full flex items-center '>
-                <div className='imgdiv h-[50%] my-auto whitespace-nowrap '>
+                <div className='imgdiv flex items-center h-[50%] my-auto whitespace-nowrap '>
                         {
                             allPicture.map((image, i) => (
                                 <div key={i} className=' h-[300px] w-[300px] rounded-2xl overflow-hidden inline-block mx-5'>
